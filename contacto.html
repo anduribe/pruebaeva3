@@ -22,6 +22,46 @@
     .mySlides {
       display: none;
     }
+    #mapita{
+        border-color: #000000;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 10px solid #fffffc;
+    box-shadow: 0px 0px 5px 2px #ccc;
+    }
+
+    #frame-container {
+    background-color: #607D8B;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border:50px solid red;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+#map-container {
+    height: 100%;
+    width: 100%;
+}
+
+iframe {
+    height: 380px;
+    border-color: #000000;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 10px solid #fffffc;
+    box-shadow: 0px 0px 5px 2px #ccc;
+}
+
+
+
+
+ 
   </style>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -95,56 +135,91 @@
     <!--LINEA DIVISORA-->
 
 
-    <section class="wrap-postulacion">
-      <div class="wrap-interior">
-
-        <!-- SLIDE PAGINA DE INICIO-->
-
-        <div id="top">
-          <iframe width="960" height="431" class="proyecto" src="https://www.youtube.com/embed/Oq2Gd-ikXno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="wrap-resultados">
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <section class="wrap-postulacion">
+              <div class="wrap-interior">
+                  <h1>DONDE ESTAMOS</h1>
+      
+                  
+                                  <div class="clear"></div>
+                  <!--MAPA DE GOOGLE MAPS-->
+      
+                  <div class="texto-info">
+                    <h4>HEADQUARTERS - EQUIPO LOS SSL</h4>
+                     <!-- Map -->
+<div id="container" class="map" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.7280404314306!2d-118.43174008447937!3d34.07648522389896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc65c07ac239%3A0x9f66d4bfd54b427!2sMansi%C3%B3n%20Playboy!5e0!3m2!1ses-419!2scl!4v1591882790524!5m2!1ses-419!2scl" width="100%"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
+</div>
+<!-- /Map -->
+                </div>
+              </div>
+            </section>
           </div>
+          <div class="col-md-7">
+            <section class="wrap-postulacion wrap-renovantes">
+              <div class="wrap-interior">
+                  <h1>FORMULARIO DE CONTACTO</h1>
 
-        <h1>PROYECTO XXX</h1>
-        <!--TEXTO INTRODUCTORIO-->
-        <div class="texto-info">
-          <h4>EL PROYECTO</h4>
-          <p>Una idea para emprender, desde la perspectiva de clientes el solo olor de una panadería cuando están horneando nos atrae, incluso a los que piensan que el pan es malo para el organismo, simplemente es muy atractivo como cliente poder disfrutar una bolsa de pan recién hecho, y lo mismo es una completa decepción cuando no nos dan el que pedimos o el que pensamos que tenían. Como emprendedores nos encontramos que de alguna manera podemos arreglar estos problemas pero la inversión inicial a la que nos enfrentamos es bastante grande, y cuando uno tiene su primer emprendimiento por lo general no tiene un presupuesto demasiado amplio.</p>
-          <h4>LA IDEA</h4>
-          <p>Realizando una comparativa de más o menos <span style="font-weight: bold;">que se debe hacer para emprender una panadería convencional</span> y que se debe hacer para ir más allá y emprender una online, siempre teniendo en cuenta nuestro análisis de plan de negocio y teniendo en cuenta las desventajas del modelo actual, pensando cual sería nuestra hipótesis y comprobarla con un <b>producto minimo viable</b>.</p>
+                  <div class="f3">
+
+
+                        <div class="item-contacto">
+                     
+                      <div class="texto-contacto">
+                                  <h5>690 901 1069 / (69) 2 261 69 854</h5>
+                                <p><strong>(Lunes a viernes de 09:00 a 19:00 horas)<br/>Horario / Lunes a Viernes de 9:00 a 14:00 horas<br/>Av. Providencia 1100, Providencia, Santiago - Chile</strong></p>
+                              </div>
+                    </div>                  
+
+                           
+                       
+                  </div>
+                  
+                  <form autocomplete>
+
+
+                    <p class="formulario">NOMBRE COMPLETO:</p>
+                    <input class="selector-css" name="nombre" type="text" id="nombre" placeholder="" pattern="^[A-ZÀ-ža-z\s]+$"
+                        minlength="5" maxlength="30" required>
+    
+        
+                    <p class="formulario">EMAIL:</p>
+                    <input class="selector-css" type="email" name="user_email" id="user_email" required />       
+        
+                    <p class="formulario">SU MENSAJE</p>      
+
+                    <input class="selector-css" name="MENSAJE" type="text" id="direccion" placeholder="" minlength="1"
+                        maxlength="100" required>                   
+
+                    
+                    <input type="submit" value="Enviar" onclick="">
+        
+                </form>
+      
+                    
+              </div>
+            </section>
+          </div>
+          <div class="clear"></div>
         </div>
-
-      </div>
-    </section>
+      </section>
 
     <section>
 
       <!--FORMULARIO DE LOGIN-->
-      <div class="box-consulta">
-        <h3>LOGIN PARA ENTRAR</h3>
-
-        <div class="box-rut">
-          <label>INGRESA TU RUT SIN PUNTOS</label>
-          <input type="text" id="rut1" />
-          <input type="text" id="rut2" />
-          <div class="clear"></div>
-          <div class="form-group">
-            <label>CONTRASEÑA</label>
-
-            <input type="password" required="" placeholder="xxxxxx" name="pass">
-            <a onclick="if (!window.__cfRLUnblockHandlers) return false; myFunctioni()" class="olvidaste">¿Olvidaste tu
-              contraseña?</a>
-          </div>
-        </div>
-        <button>CONSULTAR</button>
-        <div class="clear"></div>
-      </div>
+      
 
 
     </section>
 
+    <!--FOOTER-->
     <footer>
+       
       <div class="wrap">
-        <h3>AUSPICIADORES</h3>
+           <h3>AUSPICIADORES</h3>
         <div class="f1">
           <h3>&nbsp;</h3>
           <a href="#" target="_parent"><img src="images/tesla.png" /></a>

@@ -90,54 +90,59 @@
         <li><a href="contacto.html" target="_parent">CONTACTO</a></li>
       </ul>
 
-      <ul class="separador"></ul>
+      
     </div>
     <!--LINEA DIVISORA-->
 
 
     <section class="wrap-postulacion">
       <div class="wrap-interior">
+        <h1>NUESTRO EQUIPO</h1>
+        <!-- SOBRE EL EQUIPO-->
 
-        <!-- SLIDE PAGINA DE INICIO-->
+        <article id="cajai" style="padding-top: 25px;">
+          <figure >
+              <img src="images/perfil.png" class="img-fluid" alt="" >
+          </figure>
+         
+          <p style="color: #ffffff;font-size: 20px; font-weight: 900;line-height:35px;padding-top: 10px;" >ANDRES  URIBE</p>
+          <p style="color: dimgray;font-size: 24px;font-weight: 700;font-family: 'Segoe UI',Arial,sans-serif;margin-top: -25px;">PRODUCT OWNER </p>
+          <p style="color: dimgray;font-size: 16px;padding-right: 30px;padding-left: 30px;color: #000;font-weight: 600;padding-bottom: 97px;">Ingeniero con ADN SOLOPRENEUR, Creativo, sin miedo y de adaptación rápida a cualquier cambio.
+          </p>
+      </article>
 
-        <div id="top">
-          <iframe width="960" height="431" class="proyecto" src="https://www.youtube.com/embed/Oq2Gd-ikXno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
-        <h1>PROYECTO XXX</h1>
-        <!--TEXTO INTRODUCTORIO-->
+      <article id="cajac" style="padding-top: 25px;">
+          <figure >
+              <img src="images/isaias.png" class="img-fluid" alt="" >
+          </figure>
+          <p style="color: #ffffff;font-size: 20px; font-weight: 900;line-height:35px;padding-top: 10px;">ISAIAS MIRANDA</p>
+          <p style="color: dimgray;font-size: 24px;font-weight: 700;font-family: 'Segoe UI',Arial,sans-serif;margin-top: -25px;">DISEÑADOR GRÁFICO</p>
+          <p style="color: dimgray;font-size: 16px;padding-right: 30px;padding-left: 30px;color: #000;font-weight: 600;" >Adicto a la astronomía y otras drogas, tales como;  el conocimiento, fotografía, arte, música, juegos de rol/rpg/cartas y el cuestionamiento constante de alternativas a como se podría mejorar el mundo y la sociedad. También adicto a la cerveza.
+          </p>
+      </article>  
+      
+      <article id="cajad" style="padding-top: 25px;">
+        <figure >
+            <img src="images/gabriel.png" class="img-fluid" alt="" >
+        </figure>
+        <p style="color: #ffffff;font-size: 20px; font-weight: 900;line-height:35px;padding-top: 10px;">GABRIEL ROMERO</p>
+        <p style="color: dimgray;font-size: 24px;font-weight: 700;font-family: 'Segoe UI',Arial,sans-serif;margin-top: -25px;">MASTER BAKER</p>
+        <p style="color: dimgray;font-size: 16px;padding-right: 30px;padding-left: 30px;color: #000;font-weight: 600;padding-bottom: 120px;"> Inventor de harinas cocidas, mago de levaduras, emprendedor digital.</p>
+    </article> 
+    <div class="clear"></div> 
         <div class="texto-info">
-          <h4>EL PROYECTO</h4>
-          <p>Una idea para emprender, desde la perspectiva de clientes el solo olor de una panadería cuando están horneando nos atrae, incluso a los que piensan que el pan es malo para el organismo, simplemente es muy atractivo como cliente poder disfrutar una bolsa de pan recién hecho, y lo mismo es una completa decepción cuando no nos dan el que pedimos o el que pensamos que tenían. Como emprendedores nos encontramos que de alguna manera podemos arreglar estos problemas pero la inversión inicial a la que nos enfrentamos es bastante grande, y cuando uno tiene su primer emprendimiento por lo general no tiene un presupuesto demasiado amplio.</p>
-          <h4>LA IDEA</h4>
-          <p>Realizando una comparativa de más o menos <span style="font-weight: bold;">que se debe hacer para emprender una panadería convencional</span> y que se debe hacer para ir más allá y emprender una online, siempre teniendo en cuenta nuestro análisis de plan de negocio y teniendo en cuenta las desventajas del modelo actual, pensando cual sería nuestra hipótesis y comprobarla con un <b>producto minimo viable</b>.</p>
-        </div>
+        <p style="text-align: center;font-weight: 800;font-size: 35px;line-height: 45px;">"La única manera de hacer un trabajo genial es amar lo que haces¨<br/><span style="color:#1E7509">-Steve Jobs-</span></p>
+      </div>
 
       </div>
+     
+     
+      <div class="clear"></div>
     </section>
 
     <section>
-
-      <!--FORMULARIO DE LOGIN-->
-      <div class="box-consulta">
-        <h3>LOGIN PARA ENTRAR</h3>
-
-        <div class="box-rut">
-          <label>INGRESA TU RUT SIN PUNTOS</label>
-          <input type="text" id="rut1" />
-          <input type="text" id="rut2" />
-          <div class="clear"></div>
-          <div class="form-group">
-            <label>CONTRASEÑA</label>
-
-            <input type="password" required="" placeholder="xxxxxx" name="pass">
-            <a onclick="if (!window.__cfRLUnblockHandlers) return false; myFunctioni()" class="olvidaste">¿Olvidaste tu
-              contraseña?</a>
-          </div>
-        </div>
-        <button>CONSULTAR</button>
-        <div class="clear"></div>
-      </div>
+   
+      <div class="clear"></div>
 
 
     </section>
@@ -189,24 +194,7 @@
       }
     );
     wow.init();
-    //Script para slider
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
+   
   </script>
 </body>
 
